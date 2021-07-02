@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;/*уровняет шрифты(уберает нижний узел)*/
+}
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+.header{
+    background-color: rgb(102, 102, 102);
+    padding: 20px 0;
+}
+.logo{
+    font-size: 36px;
+    color: rgb(23, 214, 164);
+}
+.burger{
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgb(95,34,34);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.burger__line{
+    width: 100%;
+    height: 3px;
+    background: rgb(95,34,34);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu__link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+
+}
+.menu__item{
+    margin-right: 40px;
+}
+.menu__item:last-child{
+    margin-right: 0;
+}
+.burger__menu{
+    position: fixed;
+    right: -1000px;
+    top: 0;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .4s;
+    z-index: -1;
+}
+.burger__active{
+    right: 0;
+    opacity: 1;
+    z-index: 1;
+}
+.burger__content{
+    max-width: 500px;
+    width: 100%;
+    background-color: rgb(220, 199, 46);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    position: relative;
+}
+.buger__link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    background-color: rgb(150, 74, 74);
+    text-align: center;
+    padding: 20px 0;
+    transition: all .3s;
+    margin-bottom: 10px;
+}
+.buger__link:hover{
+    background-color: rgb(182, 133, 133);
+}
+.burger__close-btn{
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+.burger__bg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.632);
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
